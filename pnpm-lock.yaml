@@ -14,14 +14,20 @@ dependencies:
   react-dom:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
+  react-router-dom:
+    specifier: ^6.23.0
+    version: 6.23.0(react-dom@18.2.0)(react@18.2.0)
+  sweetalert2:
+    specifier: ^11.10.8
+    version: 11.10.8
 
 devDependencies:
   '@rocketseat/eslint-config':
     specifier: ^2.2.2
     version: 2.2.2(eslint@9.1.1)(typescript@5.3.3)
   '@types/react':
-    specifier: 18.2.45
-    version: 18.2.45
+    specifier: 18.2.42
+    version: 18.2.42
   '@types/react-dom':
     specifier: 18.2.18
     version: 18.2.18
@@ -757,6 +763,11 @@ packages:
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     dev: true
 
+  /@remix-run/router@1.16.0:
+    resolution: {integrity: sha512-Quz1KOffeEf/zwkCBM3kBtH4ZoZ+pT3xIXBG4PPW/XFtDP7EGhtTiC2+gpL9GnR7+Qdet5Oa6cYSvwKYg6kN9Q==}
+    engines: {node: '>=14.0.0'}
+    dev: false
+
   /@rocketseat/eslint-config@2.2.2(eslint@9.1.1)(typescript@5.3.3):
     resolution: {integrity: sha512-kSWN4FOyhTEiD2O6OGL2OG89MHq8HSoDwOVvy6Xqdv1DytdMvOgZsD7xBYsAyYWvwD0P+YR1nIDluVGCV+GNxA==}
     peerDependencies:
@@ -963,11 +974,11 @@ packages:
   /@types/react-dom@18.2.18:
     resolution: {integrity: sha512-TJxDm6OfAX2KJWJdMEVTwWke5Sc/E/RlnPGvGfS0W7+6ocy2xhDVQVh/KvC2Uf7kACs+gDytdusDSdWfWkaNzw==}
     dependencies:
-      '@types/react': 18.2.45
+      '@types/react': 18.2.42
     dev: true
 
-  /@types/react@18.2.45:
-    resolution: {integrity: sha512-TtAxCNrlrBp8GoeEp1npd5g+d/OejJHFxS3OWmrPBMFaVQMSN0OFySozJio5BHxTuTeug00AVXVAjfDSfk+lUg==}
+  /@types/react@18.2.42:
+    resolution: {integrity: sha512-c1zEr96MjakLYus/wPnuWDo1/zErfdU9rNsIGmE+NV71nx88FG9Ttgo5dqorXTu/LImX2f63WBP986gJkMPNbA==}
     dependencies:
       '@types/prop-types': 15.7.12
       '@types/scheduler': 0.23.0
@@ -3164,6 +3175,29 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /react-router-dom@6.23.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Q9YaSYvubwgbal2c9DJKfx6hTNoBp3iJDsl+Duva/DwxoJH+OTXkxGpql4iUK2sla/8z4RpjAm6EWx1qUDuopQ==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.16.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-router: 6.23.0(react@18.2.0)
+    dev: false
+
+  /react-router@6.23.0(react@18.2.0):
+    resolution: {integrity: sha512-wPMZ8S2TuPadH0sF5irFGjkNLIcRvOSaEe7v+JER8508dyJumm6XZB1u5kztlX0RVq6AzRVndzqcUh6sFIauzA==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+    dependencies:
+      '@remix-run/router': 1.16.0
+      react: 18.2.0
+    dev: false
+
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
@@ -3497,6 +3531,10 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /sweetalert2@11.10.8:
+    resolution: {integrity: sha512-oAkYROBfXBY+4sVbQEIcN+ZxAx69lsmz5WEBwdEpyS4m59vOBNlRU5/fJpAI1MVfiDwFZiGwVzB/KBpOyfLNtg==}
+    dev: false
 
   /synckit@0.8.8:
     resolution: {integrity: sha512-HwOKAP7Wc5aRGYdKH+dw0PRRpbO841v2DENBtjnR5HFWoiNByAl7vrx3p0G/rCyYXQsrxqtX48TImFtPcIHSpQ==}
